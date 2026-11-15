@@ -1,0 +1,18 @@
+[Unit]
+Description=RVKINO PRODUCTION website
+After=network.target
+
+[Service]
+Type=simple
+User=rvkino
+WorkingDirectory=/var/www/rvkino-production
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/var/www/rvkino-production/data /var/www/rvkino-production/assets/posters/uploads
+
+[Install]
+WantedBy=multi-user.target
