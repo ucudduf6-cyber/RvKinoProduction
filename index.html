@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="RVKINO PRODUCTION — независимый кинопродакшен. Фильмы, сериалы, шоу и визуальные истории.">
+  <title>RVKINO PRODUCTION — независимый кинопродакшен</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="progress"></div>
+  <header class="site-header" id="site-header">
+    <a href="#top" class="brand-lockup" aria-label="RVKINO PRODUCTION — на главную"><img src="assets/logo.png" alt="RVKINO PRODUCTION"><span class="brand-divider"></span><span class="brand-caption">INDEPENDENT<br>FILM STUDIO</span></a>
+    <nav class="main-nav" id="site-navigation" aria-label="Основная навигация"><a href="#work">Проекты</a><a href="#about">О нас</a><a href="#news">Новости</a><a href="#contact">Контакты</a></nav>
+    <a class="header-action" href="https://rvkino.ru/" aria-label="Перейти в онлайн-кинотеатр RVKINO" target="_blank" rel="noopener noreferrer">ОНЛАЙН-КИНОТЕАТР <img src="assets/icons/arrow-up-right.svg" alt=""></a>
+    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation" type="button"><img src="assets/icons/menu.svg" alt=""></button>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-orbit" aria-hidden="true"><span class="orbit-one"></span><span class="orbit-two"></span><span class="orbit-core">R</span></div>
+      <div class="hero-inner container">
+        <div class="hero-meta"><span class="eyebrow"><span class="status-dot"></span><span id="hero-eyebrow">НЕЗАВИСИМЫЙ КИНОПРОДАКШЕН</span></span><span class="hero-index">EST. / RVKINO</span></div>
+        <h1 id="hero-title" class="hero-heading">ИСТОРИИ.<br>В КАДРЕ.</h1>
+        <div class="hero-bottom"><div class="hero-lead"><span class="fine-label">RVKINO PRODUCTION / 001</span><p id="hero-description">Создаём кино, сериалы и визуальные истории, в которых важна каждая деталь.</p></div><a class="btn btn-white" href="#work">СМОТРЕТЬ ПРОЕКТЫ <img src="assets/icons/arrow-up-right.svg" alt=""></a></div>
+        <div class="hero-scroll"><span>ЛИСТАЙТЕ ВНИЗ</span><img src="assets/icons/arrow-down.svg" alt=""></div>
+      </div>
+    </section>
+    <section class="section projects-section container" id="work">
+      <div class="section-overline"><span>01 / ПОРТФОЛИО</span><span id="project-count">0 ПРОЕКТОВ</span></div>
+      <div class="section-intro"><h2>Наши проекты<span class="period">.</span></h2><p>Истории в разных форматах.<br>Один подход — внимание к деталям.</p></div>
+      <div class="filters" id="project-filters" role="group" aria-label="Фильтр проектов">
+        <button type="button" data-filter="all" class="active" aria-pressed="true">Все</button>
+        <button type="button" data-filter="film" aria-pressed="false">Фильмы</button>
+        <button type="button" data-filter="series" aria-pressed="false">Сериалы</button>
+        <button type="button" data-filter="show" aria-pressed="false">Шоу</button>
+        <button type="button" data-filter="vertical" aria-pressed="false">Вертикальные сериалы</button>
+      </div>
+      <div id="projects" class="projects-grid" aria-live="polite"></div>
+      <div id="empty" class="empty-projects"><div class="empty-mark">R<span>®</span></div><div><span class="fine-label">НАШИ РАБОТЫ</span><h3>Скоро здесь<br>появятся проекты.</h3><p>Мы готовим подборку подтверждённых работ. Следите за обновлениями.</p><a class="inline-link" href="https://www.imdb.com/name/nm18357618/" target="_blank" rel="noopener noreferrer">ПЕРЕЙТИ НА IMDb <img src="assets/icons/arrow-up-right.svg" alt=""></a></div></div>
+      <p class="no-results" id="no-filter" hidden>В этой категории пока нет опубликованных проектов.</p>
+    </section>
+    <section class="section about-section" id="about"><div class="container"><div class="section-overline"><span>02 / О СТУДИИ</span><span>RVKINO PRODUCTION</span></div><div class="about-layout"><div><span class="fine-label">НАШ ПОДХОД</span><h2 id="about-title">КИНО — ЭТО<br>НАШ ЯЗЫК.</h2></div><div class="about-right"><span class="about-star">✳</span><p id="about-description">RVKINO PRODUCTION — независимый продакшен, объединяющий идеи, людей и визуальный язык. Мы работаем с разными форматами: от фильмов и сериалов до шоу и вертикальных историй.</p><div class="about-tags"><span>FILM</span><span>SERIES</span><span>SHOWS</span><span>VERTICAL</span></div></div></div></div></section>
+    <section class="section news-section container" id="news"><div class="section-overline"><span>03 / ЖУРНАЛ</span><span>НОВОСТИ И СОБЫТИЯ</span></div><div class="section-intro"><h2>Последнее<span class="period">.</span></h2><p>Что происходит в студии<br>и над чем мы работаем.</p></div><div class="news-list" id="news-list"></div><div id="news-empty" class="news-empty"><span>ПОКА БЕЗ ПУБЛИКАЦИЙ</span><span>Новости скоро появятся здесь.</span></div></section>
+    <section class="section contact-section" id="contact"><div class="container"><div class="section-overline"><span>04 / НА СВЯЗИ</span><span>LET'S CONNECT</span></div><div class="contact-top"><div><span class="fine-label">СОТРУДНИЧЕСТВО / НОВЫЕ ИДЕИ</span><h2 id="contact-title">ЕСТЬ ИДЕЯ?<br>ОБСУДИМ.</h2><p id="contact-description">Открыты к новым проектам, предложениям и сотрудничеству.</p></div><a id="contact-primary" class="contact-round" href="https://t.me/RvKino" target="_blank" rel="noopener noreferrer" aria-label="Связаться"><img src="assets/icons/arrow-up-right.svg" alt=""></a></div><div class="contact-bottom"><div><h3>КОНТАКТЫ</h3><div id="contact-list" class="link-list"></div></div><div><h3>ССЫЛКИ</h3><div id="external-list" class="link-list"></div></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><div class="footer-brand"><span>RVKINO</span><small>PRODUCTION</small></div><span>© <span id="year"></span> RVKINO PRODUCTION</span><a href="#top" class="footer-up">НАВЕРХ <img src="assets/icons/arrow-up-right.svg" alt=""></a><a href="admin.html" class="admin-secret" id="admin-entry" aria-label="Панель управления">admin</a></div></footer>
+  <script src="config.js"></script><script src="shared.js"></script><script src="script.js"></script>
+</body>
+</html>

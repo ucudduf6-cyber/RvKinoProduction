@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+data/
+assets/posters/uploads/
+node_modules/
+.DS_Store
+*.log
